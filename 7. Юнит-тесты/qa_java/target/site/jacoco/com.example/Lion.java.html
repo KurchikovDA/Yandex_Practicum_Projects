@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Lion.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">untitled</a> &gt; <a href="index.source.html" class="el_package">com.example</a> &gt; <span class="el_source">Lion.java</span></div><h1>Lion.java</h1><pre class="source lang-java linenums">package com.example;
+
+import java.util.List;
+
+public class Lion {
+
+    boolean hasMane;
+    Predator predator; //Объявили переменную predator типа Predator
+
+    // Инъекция зависимости через конструктор
+<span class="fc" id="L11">    public Lion(String sex, Predator predator) throws Exception {</span>
+                // Проверка значения пола и установка hasMane
+<span class="fc bfc" id="L13" title="All 2 branches covered.">        if (&quot;Самец&quot;.equals(sex)) {</span>
+<span class="fc" id="L14">            hasMane = true;</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        } else if (&quot;Самка&quot;.equals(sex)) {</span>
+<span class="fc" id="L16">            hasMane = false;</span>
+        } else {
+            // В случае неверного значения пола выбрасываем исключение
+<span class="fc" id="L19">            throw new Exception(&quot;Используйте допустимые значения пола животного - самец или самка&quot;);</span>
+        }
+
+        // Инъекция зависимости Predator
+<span class="fc" id="L23">        this.predator = predator;</span>
+<span class="fc" id="L24">    }</span>
+
+    // Вызов метода getKittens() зависимости predator
+    public int getKittens() {
+<span class="fc" id="L28">        return predator.getKittens();</span>
+    }
+
+    // Возвращение значения hasMane
+    public boolean doesHaveMane() {
+<span class="fc" id="L33">        return hasMane;</span>
+    }
+
+    // Вызов метода eatMeat() зависимости predator
+    public List&lt;String&gt; getFood() throws Exception {
+<span class="fc" id="L38">        return predator.eatMeat();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
