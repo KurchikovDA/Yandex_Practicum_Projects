@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: courier_test.CreateCourierTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.072 s - in courier_test.CreateCourierTest
