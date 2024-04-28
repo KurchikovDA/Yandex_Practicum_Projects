@@ -63,3 +63,70 @@
 Более подробная информация о каждом проекте доступна в соответствующих директориях репозитория. В случае возникновения вопросов, не стесняйтесь обращаться!
 
 *Спасибо за внимание!*
+
+# Testing Projects from the "Software Testing Engineer: From Novice to Automation Specialist" Course
+
+This repository contains projects completed as part of the "Software Testing Engineer: From Novice to Automation Specialist" course at Yandex.Practicum. Below is a brief description of each project.
+
+---
+
+1. **Test Design**
+   - Conducted test analysis and designed checks for a part of the requirements for Yandex Maps.
+   - Created a dependency diagram and flowchart.
+   - Prepared a table with criteria for evaluating effectiveness.
+   - Developed test cases based on test data.
+
+2. **Web Application Testing**
+   - Compiled checklists for layout and logic, as well as test cases for functionality verification.
+   - Conducted checks in two environments.
+   - Created bug reports in the YouTrack task management system.
+   - Intercepted backend response and substituted a new type.
+
+3. **Mobile Applications and API Testing**
+   - Prepared a checklist for testing the mobile application.
+   - Tested the mobile application in the Android Studio emulator and API via Postman.
+   - Created bug reports in YouTrack.
+
+4. **Database Basics**
+   - Studied a list of tasks and wrote SQL queries to accomplish them.
+
+5. **Manual Testing Diploma Project**
+   - Conducted comprehensive testing, including web, mobile applications, and API.
+
+6. **UI Testing**
+   - Developed Java-based automated tests for the "Yandex Scooter" UI service.
+   - Organized a Maven project in an IDE with dependencies on JUnit 4 and Selenium.
+   - Wrote tests for Google Chrome and Mozilla Firefox.
+   - Identified page element locators and created Page Object classes.
+   - Wrote tests using Selenium WebDriver and the Page Object pattern.
+   - Organized project files for ease of use.
+
+7. **Unit Testing**
+   - Developed unit tests for a program segment recording observations on cats in Java.
+   - Created an educational project in an IDE using Jacoco, Mockito, and JUnit.
+   - Ensured the independence of the Lion class from the Feline class using dependency injection.
+   - Wrote mocks using Mockito and tests for the Feline, Cat, and Lion classes.
+   - Parameterized tests to ensure broad functionality coverage.
+
+8. **API Testing**
+   - Prepared a Maven project for testing the Yandex.Scooter API service.
+   - Added dependencies on JUnit 4, RestAssured, and Allure.
+   - Wrote tests for the core API functions.
+   - Organized tests according to requirements.
+   - Created a report using Allure.
+   - Uploaded code to GitHub.
+
+9. **Automation Testing Diploma Project**
+   - Wrote automated tests for ordering burgers in the Stellar Burgers application.
+   - Conducted unit testing using mocks, stubs, and parameterization.
+   - Configured a script for building the project in Jenkins.
+   - Developed tests using the Page Object pattern to describe page elements.
+   - Conducted functional testing in Google Chrome and Yandex.Browser.
+   - Included testing results in an Allure report.
+
+---
+
+More detailed information about each project is available in their respective directories in the repository. If you have any questions, feel free to reach out!
+
+Thank you for your attention!
+
